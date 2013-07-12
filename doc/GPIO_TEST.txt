@@ -1,0 +1,47 @@
+Hardware
+==============
+
+Conector DB25
+==================
+Pinos
+1 = Alimenta os Botões
+2 a 9 = LEDs
+10 a 13 = Leitura dos Botões
+25 = GND
+
+Exemplo Leitura Botão
+======================
+P1_DB25 (P1_GPIO 3.3V)
+|
+|
+R10K
+|
+|_______ P10_DB25 (P15_GPIO)
+| 
+ \
+|
+|
+P25_DB25 (Gnd P6_GPIO)
+
+--> Quando chave aberta sinal 1 (vcc), quando fechada sinal 0 (Gnd)
+
+Configuração de Pinos
+======================
+DB25	x	GPIO
+1		1
+
+2		10
+3		11
+4		12
+5		13
+6		21
+7		22
+8		23
+9		24
+
+10		15
+11		16
+12		18
+13		19
+
+25		6
